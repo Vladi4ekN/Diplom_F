@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Page</title>
+</head>
+<body>
+    <h1>Welcome to the Bookstore Links!</h1>
+    <ul>
+        {% for book in books %}
+            <li><a href="{{ book.link }}">{{ book.title }}</a></li>
+        {% endfor %}
+    </ul>
+    <a href="/admin">Go to Admin Panel</a>
+</body>
+</html>
